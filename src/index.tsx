@@ -6,13 +6,12 @@ import { App } from './App';
 import { RouterProvider, createHashRouter,useActiveVkuiLocation, useParams } from '@vkontakte/vk-mini-apps-router';
 // axios
 
-import axios from 'axios'
+import data from './Data'
 
 
 
 
-
-const data = async (props) => await fetch('https:/apis.anabasis.pro/api/addresses')
+// const data = async (props) => await fetch('https:/apis.anabasis.pro/api/addresses')
 
 console.log(data)
 //.then(Response => Response.json())

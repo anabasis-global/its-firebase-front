@@ -5,7 +5,7 @@ export default async function Data(ctx) {
     
   
   request = await fetch('https://apis.anabasis.pro/api/addresses').then(response => ctx.response = response.body) 
-  
+  console.log(request)
    
     return request
   
