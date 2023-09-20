@@ -8,7 +8,14 @@ import { RouterProvider, createHashRouter,useActiveVkuiLocation, useParams } fro
 
 import axios from 'axios'
 
-const data = axios.get('https:/apis.anabasis.pro/api/addresses').then(Response => Response.data)
+
+
+
+
+const data = async (props) => await fetch('https:/apis.anabasis.pro/api/addresses')
+
+console.log(data)
+//.then(Response => Response.json())
 
 
 
