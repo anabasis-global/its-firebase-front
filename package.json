@@ -15,7 +15,6 @@
     "@vkontakte/vkjs": "1.1.0",
     "@vkontakte/vkui": "5.8.1",
     "add": "2.0.6",
-    "axios": "1.5.0",
     "events": "^3.3.0",
     "firebase": "10.4.0",
     "http": "^0.0.0",
