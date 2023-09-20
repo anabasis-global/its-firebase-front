@@ -1,9 +1,9 @@
 import { FC, memo, useContext, useEffect, useState } from 'react';
 
 
-import { View } from '@vkontakte/vkui'
+import { Root, Button, View } from '@vkontakte/vkui'
 // import * as icons from '@vkontakte/icons';
-// import './style.css';
+import './style.css';
 
 
 
@@ -17,12 +17,10 @@ export const App: FC<{ name: string }> = ({ name }) => {
   //  useEffect
 
   return (
-    <div>
+    <>
       <h1>Hello {name}!</h1>
       <p>Start editing to see some magic happen :)</p>
-      <Root activeView={data}>
-
-      </Root>
-    </div>
+     
+    </>
   );
 };
