@@ -1,16 +1,22 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import {RouterProvider} from '@vkontakte/vk-mini-apps-router'
 import { App } from './App';
 
+import { RouterProvider, createHashRouter,useActiveVkuiLocation, useParams } from '@vkontakte/vk-mini-apps-router';
 // axios
+
+import axios from 'axios'
+
+const data = axios.get('https:/apis.anabasis.pro/api/addresses').then(Response => Response.data)
+
+
+
 
 const root = createRoot(document.getElementById('app'));
 
 root.render(
   <StrictMode>
-    <RouterProvider />
     <App name="StackBlitz" />
   </StrictMode>
 );
