@@ -8,11 +8,13 @@ import './style.css';
 
 //const platform = usePlatform();
 
+function ItemsList = data => data.map((item, key) => <div key={key}>{item.name}</div>
+
 export const App: FC<{ name: string }> = async ({ name }) => {
   let [data, setData] = useState(name);
  
-  let req = await fetch('https://apis.anabasis.pro/api/addresses').then(res => res.json()).catch(e => console.error(e))
-  .then(body => setData(body.data))
+  // let req = await fetch('https://apis.anabasis.pro/api/addresses').then(res => res.json()).catch(e => console.error(e))
+  // .then(body => setData(body.data))
 
 
 
@@ -21,8 +23,10 @@ export const App: FC<{ name: string }> = async ({ name }) => {
 
   return (
     <>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <div>
+
+      </div>
+      <h1>{name}!</h1>
 
       {data}
      
