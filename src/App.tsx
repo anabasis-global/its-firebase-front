@@ -8,7 +8,7 @@ import './style.css';
 
 //const platform = usePlatform();
 
-function ItemsList = data => data.map((item, key) => <div key={key}>{item.name}</div>
+function getItems = data => data.map((item, key) => { key, item })
 
 export const App: FC<{ name: string }> = async ({ name }) => {
   let [data, setData] = useState(name);
