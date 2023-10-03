@@ -8,7 +8,7 @@ import './style.css';
 
 //const platform = usePlatform();
 
-function getItems = data => data.map((item, key) => { key, item })
+// function getItems = data => data.map((item, key) => { key, item })
 
 export const App: FC<{ name: string }> = async ({ name }) => {
   let [data, setData] = useState(name);
@@ -21,15 +21,11 @@ export const App: FC<{ name: string }> = async ({ name }) => {
 
   // setData(req)
 
-  return (
-    <>
+  return (<>
       <div>
-
+app
       </div>
       <h1>{name}!</h1>
-
-      {data}
      
-    </>
-  );
+    </>);
 };
