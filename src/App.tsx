@@ -10,22 +10,21 @@ import './style.css';
 
 // function getItems = data => data.map((item, key) => { key, item })
 
-export const App: FC<{ name: string }> = async ({ name }) => {
-  let [data, setData] = useState(name);
+export const App: FC<{ name: string }> = ({ name }) => {
+  // let [data, setData] = useState(name);
  
   // let req = await fetch('https://apis.anabasis.pro/api/addresses').then(res => res.json()).catch(e => console.error(e))
   // .then(body => setData(body.data))
 
 
 
-
-  // setData(req)
+useEffect( () => {
+  console.log('app')
+  // async () => await fetch('https://apis.anabasis.pro/api/addresses')
+})
+  
 
   return (<>
-      <div>
-app
-      </div>
-      <h1>{name}!</h1>
-     
+      <h1>{name}</h1>
     </>);
 };

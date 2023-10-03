@@ -11,3 +11,7 @@
   
 //   }
     
+
+export default functon Data() {
+  return <div>Data</div>
+}
