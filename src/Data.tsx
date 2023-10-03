@@ -37,7 +37,14 @@ const streets = [
   'Percy Lavon Julian: chemist',
   'Subrahmanyan Chandrasekhar: astrophysicist'
 ];
-
+function getCulture(locale) {
+  const result = streets[locale];
+  
+  if (result) {
+    return result;
+  }
+  return locale ? `${locale}-${locale}` : 'en-us';
+}
 export default {
   
 }
