@@ -11,7 +11,7 @@ import './style.css';
 // function getItems = data => data.map((item, key) => { key, item })
 
 export const App: FC<{ name: string }> = ({ name }) => {
-  // let [data, setData] = useState(name);
+  let [data, setData] = useState(name);
  
   // let req = await fetch('https://apis.anabasis.pro/api/addresses').then(res => res.json()).catch(e => console.error(e))
   // .then(body => setData(body.data))
@@ -20,11 +20,16 @@ export const App: FC<{ name: string }> = ({ name }) => {
 
 useEffect( () => {
   console.log('app')
+
+  setData("AppNameData")
+
   // async () => await fetch('https://apis.anabasis.pro/api/addresses')
 })
   
 
   return (<>
       <h1>{name}</h1>
+
+      {data}
     </>);
 };
