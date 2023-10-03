@@ -10,8 +10,34 @@
 //     return request
   
 //   }
-    
 
-export default functon Data() {
-  return <div>Data</div>
+interface Street {
+
+}
+
+let Address = (address) => {
+  
+  // switch(address) {
+  //   case "before":
+    
+      
+  //   case default: 
+  //     return { }
+  // }
+
+
+  return address
+
+}
+    
+const streets = [
+  'проспект',
+  '',
+  '${street} проспект',
+  'Percy Lavon Julian: chemist',
+  'Subrahmanyan Chandrasekhar: astrophysicist'
+];
+
+export default {
+  
 }
